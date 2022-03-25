@@ -137,17 +137,19 @@ form .name-details .field:last-child {
     object-fit: cover;
     border-radius: 50%;
 }
-.users header .content{
+:is(.users, .users-list) .content{
     display: flex;
+    align-items: center;
 }
 .users header .content img{
     height: 50px;
     width: 50px;
 }
-.users header .details{
+:is(.users, .users-list) .details{
     margin-left: 15px;
+    color: #000;
 }
-.users header .details span{
+:is(.users, .users-list) .details span{
     font-size: 18px;
     font-weight: 500;
 }
@@ -194,6 +196,14 @@ form .name-details .field:last-child {
 
 }
 .users-list a{
-    
+    padding-right: 15px;
+}
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+}
+.users-list a .status-dot{
+    font-size: 12px;
+    color: #468669;
 }
 /* End Users Area CC Code */
